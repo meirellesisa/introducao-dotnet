@@ -1,0 +1,38 @@
+## Ignore arquivos/pastas do Visual Studio
+.vs/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+## Ignore pastas de build
+bin/
+obj/
+out/
+[Bb]uild/
+
+## Ignore logs
+*.log
+
+## Ignore caches temporários
+*.vsidx
+*.ide
+*.tmp
+*.cache
+*.pdb
+
+## Ignore arquivos de backup
+*~ 
+*.bak
+*.old
+
+## Ignore pacotes NuGet (baixados automaticamente)
+*.nupkg
+packages/
+
+## Ignore arquivos de publicação
+publish/
+wwwroot/lib/
+
+## Ignore configurações específicas de máquina
+*.launchSettings.json
