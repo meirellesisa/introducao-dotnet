@@ -216,15 +216,14 @@ Console.WriteLine(nomeEIdade);
 // estruturas de controle (if),
 // funções de string(IsNullOrEmpty) 
 
-/*
- *string Usuario(string nome)
-{
-    if (string.IsNullOrEmpty(nome))
-    {
-        return "Nome é obrigatório"; // Retorna mensagem quando parâmetro é vazio ou nulo
-    }
 
-    return nome;
+ string Usuario(string nome)
+{   // condição ? se for verdadeiro : se for falso
+    var nomeValido = string.IsNullOrEmpty(nome)
+        ? "Nome é obrigatório" 
+        : nome;
+
+    return nomeValido;
 };
 
 var usuario = Usuario("João");
@@ -232,5 +231,5 @@ Console.WriteLine(usuario);
 
 var usuario2 = Usuario("");
 Console.WriteLine(usuario2);
-*/
+
 #endregion
