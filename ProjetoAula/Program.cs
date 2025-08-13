@@ -216,6 +216,7 @@ Console.WriteLine(nomeEIdade);
 // estruturas de controle (if),
 // funções de string(IsNullOrEmpty) 
 
+/*
 
  string Usuario(string nome)
 {   // condição ? se for verdadeiro : se for falso
@@ -231,5 +232,5 @@ Console.WriteLine(usuario);
 
 var usuario2 = Usuario("");
 Console.WriteLine(usuario2);
-
+*/
 #endregion
