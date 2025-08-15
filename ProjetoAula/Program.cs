@@ -1,9 +1,10 @@
-﻿
-Console.WriteLine("Primeira Aula");
+﻿using ProjetoAula.EstruturaDeDados;
+
+//Console.WriteLine("Primeira Aula");
 
 // Declarando constantes gerais para exemplos
-const int numero1 = 1;
-const int numero2 = 2;
+//const int numero1 = 1;
+//const int numero2 = 2;
 
 #region Declarando variáveis em C#
 /*
@@ -234,3 +235,21 @@ var usuario2 = Usuario("");
 Console.WriteLine(usuario2);
 */
 #endregion
+
+var arrayList = new ArrayListExemplo();
+arrayList.Executar();
+
+var arrayTipado = new ArrayTipadoExemplo();
+arrayTipado.Executar();
+
+var listaGenerica = new ListaGenericaExemplo();
+listaGenerica.Executar();
+
+var dicionario = new DicionarioExemplo();
+dicionario.Executar();
+
+var fila = new FilaExemplo();
+fila.Executar();
+
+var pilha = new PilhaExemplo();
+pilha.Executar();
