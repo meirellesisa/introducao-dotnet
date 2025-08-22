@@ -1,4 +1,6 @@
-﻿namespace ProjetoAula.EstruturaDeDados
+﻿using System.Security.Cryptography.X509Certificates;
+
+namespace ProjetoAula.EstruturaDeDados
 {
     public class ArrayTipadoExemplo
     {
@@ -54,6 +56,13 @@
                 Console.WriteLine(item);
             }
             Console.WriteLine("--------- FIM");
+
+            
+        }
+
+        public int Soma(int numero1, int numero2)
+        {
+            return 0;
         }
     }
 }

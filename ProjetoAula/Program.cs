@@ -1,4 +1,4 @@
-﻿using ProjetoAula.EstruturaDeDados;
+﻿using ProjetoAula.EstruturasDeControle;
 
 //Console.WriteLine("Primeira Aula");
 
@@ -236,6 +236,8 @@ Console.WriteLine(usuario2);
 */
 #endregion
 
+#region Métodos exemplo -> Estruturas de Dados
+/*
 var arrayList = new ArrayListExemplo();
 arrayList.Executar();
 
@@ -253,3 +255,30 @@ fila.Executar();
 
 var pilha = new PilhaExemplo();
 pilha.Executar();
+
+Cadastro.Funcionario funcionario = new Cadastro.Funcionario();
+Financeiro.ContasReceber contasReceber = new Financeiro.ContasReceber();
+*/
+#endregion
+
+#region Estruturas de Controle
+/*var ifAndElse = new IfAndElseAndElseIfExemplos();
+ifAndElse.Executar();
+
+
+var switchExemplos = new SwitchExemplos();
+switchExemplos.Executar();
+
+var forExemplo = new ForExemplo();  
+forExemplo.Executar();
+
+var foreachExemplo = new ForeachExemplo();
+foreachExemplo.Executar();
+
+var whileExemplo = new WhileEDoWhileExemplo();
+whileExemplo.Executar();
+
+var breakEContinueExemplo = new BreakEContinueExemplo();
+breakEContinueExemplo.Executar();
+*/
+#endregion
