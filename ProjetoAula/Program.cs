@@ -1,4 +1,5 @@
-﻿using ProjetoAula.EstruturasDeControle;
+﻿using Cadastro;
+using ProjetoAula.ClassesEOutrosTipos.Heranca;
 
 //Console.WriteLine("Primeira Aula");
 
@@ -282,3 +283,51 @@ var breakEContinueExemplo = new BreakEContinueExemplo();
 breakEContinueExemplo.Executar();
 */
 #endregion
+
+Console.WriteLine("Entendendo NameSpace----");
+var pessoa  = new Cadastro.Pessoa();
+var funcionario = new Financeiro.Funcionario();
+
+Console.WriteLine("Entendendo Classes - com atributos privados e publicos----");
+var produto = new Cadastro.Produto();
+//var produto2 = new Produto(); -> Não é usado pois temos as declarações de using no topo do arquivo
+//produto.Id =  não é possível pois o Id é privado
+produto.AtribuirId(id: 1);
+produto.Descricao = "Notebook Dell";
+produto.ImprimirNoConsole();
+
+Console.WriteLine("Entendendo Classes estáticas------");
+//Produto.ImprimirNoConsole(); - Isso não funciona pois nossa classe não é estática 
+
+var resultadoSoma = Calculos.SomarNumeros(2, 3); // usando classe com modificador estatico
+Console.WriteLine(resultadoSoma);
+
+// Entendendo Classes com propriedades de leitura e escrita
+var produtoEstoque = new ProjetoAula.ClassesEOutrosTipos.Produto();
+produtoEstoque.Nome = "Teclado";
+produtoEstoque.Descricao = "Teclado Mecânico";
+//produto.Estoque = 10; // -> Não é possível pois o atributo estoque é apenas de leitura
+Console.WriteLine(produtoEstoque.Estoque);
+
+// Construtor personalizado
+var produto2 = new ProjetoAula.ClassesEOutrosTipos.Produto(nome: "Mesa", descricao: "teste", estoque:2);
+
+
+Console.WriteLine("Entendendo Herança-----");
+var pessoaFisica = new PessoaFisica();
+pessoaFisica.Id = 1;
+
+var pessoaFisica2 = new PessoaFisica(
+    id: 2,
+    endereco: "Rua A, 123",
+    cidade: "São Paulo",
+    cep: "12345-678",
+    cpf: "123.456.789-00"
+    );
+
+pessoaFisica2.ImprimirNoConsole();
+pessoaFisica2.ImprimirCpf();
+
+var funcionarioExemploHeranca = new ProjetoAula.ClassesEOutrosTipos.Heranca.Funcionario();
+funcionarioExemploHeranca.Matricula = "12345";
+Console.WriteLine(funcionarioExemploHeranca.Matricula);
