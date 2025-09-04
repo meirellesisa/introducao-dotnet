@@ -1,7 +1,4 @@
-﻿using Cadastro;
-using ProjetoAula.ClassesEOutrosTipos.Heranca;
-
-//Console.WriteLine("Primeira Aula");
+﻿//Console.WriteLine("Primeira Aula");
 
 // Declarando constantes gerais para exemplos
 //const int numero1 = 1;
@@ -284,6 +281,8 @@ breakEContinueExemplo.Executar();
 */
 #endregion
 
+#region Classes e outros tipos
+/*
 Console.WriteLine("Entendendo NameSpace----");
 var pessoa  = new Cadastro.Pessoa();
 var funcionario = new Financeiro.Funcionario();
@@ -311,8 +310,11 @@ Console.WriteLine(produtoEstoque.Estoque);
 
 // Construtor personalizado
 var produto2 = new ProjetoAula.ClassesEOutrosTipos.Produto(nome: "Mesa", descricao: "teste", estoque:2);
+*/
+#endregion
 
-
+#region Herança
+/*
 Console.WriteLine("Entendendo Herança-----");
 var pessoaFisica = new PessoaFisica();
 pessoaFisica.Id = 1;
@@ -331,3 +333,75 @@ pessoaFisica2.ImprimirCpf();
 var funcionarioExemploHeranca = new ProjetoAula.ClassesEOutrosTipos.Heranca.Funcionario();
 funcionarioExemploHeranca.Matricula = "12345";
 Console.WriteLine(funcionarioExemploHeranca.Matricula);
+*/
+#endregion
+
+/*using ProjetoAula.ClassesEOutrosTipos.Abstracao;
+
+var cachorro = new Cachorro();
+cachorro.Nome = "Dom";
+
+Console.WriteLine(cachorro.ObterInformacoes());
+cachorro.ImprimirDados();
+
+//var animal = new Animal(); -> da erro pois classes abstratas não podem ser instanciadas 
+*/
+
+using ProjetoAula.ClassesEOutrosTipos.TipoRecord;
+using System.Runtime.InteropServices;
+
+/*Console.WriteLine("==== Exemplo de Polimorfismo ====");
+
+Funcionario[] funcionarios = new Funcionario[]
+{
+    new Vendedor(nome: "Ana", salarioBase: 3000m, taxaComissao: 0.10m), // bonus 10% do salario base
+    new Gerente(nome:"Bruno", salarioBase: 8000m, multiplicador: 0.20m) // bonus 20% do salario
+};
+
+foreach(var funcionario in funcionarios)
+{
+    Console.WriteLine($"{funcionario.Nome} - Bonus: {funcionario.CalcularBonus()}");
+}
+
+//Existem dois tipos de polimorfismo 
+
+*/
+
+/*var contaBancaria = new ContaBancaria("Isabella", 100m);
+contaBancaria.Depositar(50m);
+var saque = contaBancaria.Sacar(300);
+Console.WriteLine(contaBancaria.Saldo);
+Console.WriteLine(saque);*/
+
+/*var configuracaoProjeto = new Configuracao();
+configuracaoProjeto.Host = "localhost";
+
+var configaracao2 = new Configuracao
+{
+    Host = "localHost2"
+};
+
+Console.WriteLine(configuracaoProjeto.Host);
+
+Console.WriteLine(configaracao2.Host);*/
+
+
+var curso1 = new Curso() { Id = 1, Descricao = "Curso" };
+var curso2 = new Curso();
+curso2.Id = curso1.Id;
+curso2.Descricao = "TESTE TESTE";
+//Console.WriteLine($"Primeira tentativa usando operador de igualdade : {curso1 == curso2}");
+
+//Console.WriteLine(curso1.Equals(curso2));
+
+//var cursoHistoria = new CursoHistoria(1,"Historia Do Brasil");
+//Console.WriteLine($"Id - {cursoHistoria.Id}, Decricao - {cursoHistoria.Descricao}");
+Console.WriteLine(curso1.Descricao);
+Console.WriteLine(curso2.Descricao);
+
+// Usando record
+var cursoHistoria1 = new CursoHistoria(1, "Curso historia exemplo");
+var cursoHistoria2 = cursoHistoria1 with { Descricao = "teste" };
+
+Console.WriteLine(cursoHistoria1.Descricao);
+Console.WriteLine(cursoHistoria2.Descricao);
