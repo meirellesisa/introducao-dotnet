@@ -1,4 +1,7 @@
-﻿//Console.WriteLine("Primeira Aula");
+﻿using ProjetoAula.ConversoresDeValor;
+using ProjetoAula.TrabalhandoComStrings;
+
+//Console.WriteLine("Primeira Aula");
 
 // Declarando constantes gerais para exemplos
 //const int numero1 = 1;
@@ -237,22 +240,22 @@ Console.WriteLine(usuario2);
 #region Métodos exemplo -> Estruturas de Dados
 /*
 var arrayList = new ArrayListExemplo();
-arrayList.Executar();
+arrayList.CovertAndParseExecutar();
 
 var arrayTipado = new ArrayTipadoExemplo();
-arrayTipado.Executar();
+arrayTipado.CovertAndParseExecutar();
 
 var listaGenerica = new ListaGenericaExemplo();
-listaGenerica.Executar();
+listaGenerica.CovertAndParseExecutar();
 
 var dicionario = new DicionarioExemplo();
-dicionario.Executar();
+dicionario.CovertAndParseExecutar();
 
 var fila = new FilaExemplo();
-fila.Executar();
+fila.CovertAndParseExecutar();
 
 var pilha = new PilhaExemplo();
-pilha.Executar();
+pilha.CovertAndParseExecutar();
 
 Cadastro.Funcionario funcionario = new Cadastro.Funcionario();
 Financeiro.ContasReceber contasReceber = new Financeiro.ContasReceber();
@@ -261,23 +264,23 @@ Financeiro.ContasReceber contasReceber = new Financeiro.ContasReceber();
 
 #region Estruturas de Controle
 /*var ifAndElse = new IfAndElseAndElseIfExemplos();
-ifAndElse.Executar();
+ifAndElse.CovertAndParseExecutar();
 
 
 var switchExemplos = new SwitchExemplos();
-switchExemplos.Executar();
+switchExemplos.CovertAndParseExecutar();
 
 var forExemplo = new ForExemplo();  
-forExemplo.Executar();
+forExemplo.CovertAndParseExecutar();
 
 var foreachExemplo = new ForeachExemplo();
-foreachExemplo.Executar();
+foreachExemplo.CovertAndParseExecutar();
 
 var whileExemplo = new WhileEDoWhileExemplo();
-whileExemplo.Executar();
+whileExemplo.CovertAndParseExecutar();
 
 var breakEContinueExemplo = new BreakEContinueExemplo();
-breakEContinueExemplo.Executar();
+breakEContinueExemplo.CovertAndParseExecutar();
 */
 #endregion
 
@@ -345,7 +348,7 @@ Console.WriteLine(cachorro.ObterInformacoes());
 cachorro.ImprimirDados();
 
 //var animal = new Animal(); -> da erro pois classes abstratas não podem ser instanciadas 
-*/
+
 
 using ProjetoAula.ClassesEOutrosTipos.TipoRecord;
 using System.Runtime.InteropServices;
@@ -383,7 +386,7 @@ var configaracao2 = new Configuracao
 
 Console.WriteLine(configuracaoProjeto.Host);
 
-Console.WriteLine(configaracao2.Host);*/
+Console.WriteLine(configaracao2.Host);
 
 
 var curso1 = new Curso() { Id = 1, Descricao = "Curso" };
@@ -405,3 +408,31 @@ var cursoHistoria2 = cursoHistoria1 with { Descricao = "teste" };
 
 Console.WriteLine(cursoHistoria1.Descricao);
 Console.WriteLine(cursoHistoria2.Descricao);
+
+*/
+
+
+/*using ProjetoAula.ClassesEOutrosTipos.Interface;
+
+var noficarCliente = new NotificarCliente();
+noficarCliente.Noticar();
+
+var noficarFuncionario = new NotificarFuncionario();
+noficarFuncionario.Noticar();
+//var notificacao = new INotificacao() -> erro pois tipo interface não pode ser instanciado 
+*/
+
+
+
+//var conversores = new ConvertAndParseAndTryParseExemplo();
+//conversorParse.CovertAndParseExecutar();
+//conversores.TryParseExecutar();
+
+//ToLowerExemplo.Executar();
+
+//ToUpperExemplo.Executar();
+//SubstringExemplos.Executar();
+
+//RangeExemplo.Executar();
+
+ConstainsExemplo.Executar();
