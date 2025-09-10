@@ -1,4 +1,5 @@
 ﻿using ProjetoAula.ConversoresDeValor;
+using ProjetoAula.TrabalhandoComDatas;
 using ProjetoAula.TrabalhandoComStrings;
 
 //Console.WriteLine("Primeira Aula");
@@ -420,7 +421,7 @@ noficarCliente.Noticar();
 var noficarFuncionario = new NotificarFuncionario();
 noficarFuncionario.Noticar();
 //var notificacao = new INotificacao() -> erro pois tipo interface não pode ser instanciado 
-*/
+
 
 
 
@@ -435,4 +436,27 @@ noficarFuncionario.Noticar();
 
 //RangeExemplo.Executar();
 
-ConstainsExemplo.Executar();
+//ConstainsExemplo.Executar();
+
+//TrimExemplos.Executar();
+
+//StartWithAndEndWithExemplos.Executar();
+
+//ReplaceExemplos.Executar();
+
+//LengthExemplos.Executar();
+*/
+
+
+//DateTimeExemplos.Executar();
+// SubtraindoDatasExemplo.Executar();
+
+//AdicionandoDiaMesAnoExemplo.Executar();
+
+//AdicionandoHoraMinutoSegundoExemplos.Executar();
+
+//RecuperandoDiaDaSemanaExemplos.Executar();
+
+//DateOnlyExemplos.Executar();
+
+TimeOnlyExemplo.Executar();
